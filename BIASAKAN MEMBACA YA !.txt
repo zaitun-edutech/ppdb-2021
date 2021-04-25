@@ -1,0 +1,36 @@
+Assalamu 'alaikum
+
+Sebelum di unggah ke hosting perhatikan poin-poin berikut ini !
+
+1. Untuk melakukan ubah gambar cek pada folder *img*
+   logo2.png			>	untuk logo KOP surat sebelah kiri
+   logo.png			>	untuk logo KOP surat sebelah kanan
+   bg_header.jpg		>	untuk Background depan
+   alur_ppdb_online_new.jpg	>	untuk Alur PPDB
+   ttd.png			>	untuk TTD ketua panitia
+   ttd_kepala.png		>	untuk TTD Kepala
+   
+   Ekstensi gambar jangan diubah ya !!!
+
+2. Ubah config
+   Appplication/config.php
+   Baris ke 26
+   $config['base_url'] = "http://".$_SERVER['HTTP_HOST'];
+
+   ubah menjadi $config['base_url'] = "https://".$_SERVER['HTTP_HOST'];
+   
+   Agar saat di unggah tampilan normal, dan ada enkripsinya
+
+3. Versi PHP Maksimal 7.2 jangan di atas itu
+
+4. Ubah MAP
+   cari ke folder web --> index.php
+   baris ke 422 ubah src menjadi map sekolahmu yang ada diantara tanda ". . . ."
+   cari embed map banyak caranya di google
+
+5. Untuk masuk ke dalam login admin
+   tambahkan   /panel_admin/log_in
+
+   User : admin
+   Pass : admin
+
